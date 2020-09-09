@@ -5,10 +5,10 @@ NIST全稱NIST Special Database 19，全數據集包含了80多萬張圖片MNIST
 
 ### 流程：
 #### A.	參數設置 
-learning_rate = 5\*1e-4
-num_steps = 1500 (訓練1500次)
-batch_size = 150 (將資料集任取150筆為一組)
-display_step = 100 (每100次顯示一次準確率)
+- learning_rate = 5\*1e-4
+- num_steps = 1500 (訓練1500次)
+- batch_size = 150 (將資料集任取150筆為一組)
+- display_step = 100 (每100次顯示一次準確率)
 #### B. 測試集圖片影像處理
 運用opnecv套件，cv2.threshold將圖片二值化cv2.connectedComponentsWithStats找出圖片內容的位置，進行裁切並用cv2.resize縮放得到24\*24的圖片，cv2.copyMakeBorder再填補空白得到與原先相同大小28\*28的圖片，最後cv2.erode將圖片腐蝕可減少噪點。
 #### C. 調整資料型態
