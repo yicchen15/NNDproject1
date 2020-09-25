@@ -1,5 +1,25 @@
 # NND-Project1
 
+### 題目：
+請自行用MINST資料集做training data來訓練分類器。
+
+Validation data共有200張本課程同學的手寫圖供測試，每張的尺寸為28X28像數，灰階，uint8格式。
+
+A. 習慣讀取idx3-ubyte圖檔格式的同學請下載validation-images-idx3-ubyte.gz，其
+分類標籤請下載validation-labels-idx3-ubyte.gz
+B. 習慣讀取jpg圖檔格式的linux愛用者請下載validation.tar; windows愛用者請下載validation.zip，
+
+其分類標籤(label)請下載valdation.csv(喜愛用excel的同學可以下載valdation.xlsx的格式)
+
+Project1有兩部分，第一部分是程式佔80%，第二份是紙本Project佔20%。
+
+程式部分的評分方式，老師會用另外200張手寫數字圖做為測試集，你程式辨識出來的正確率即為程式部分的成績。程式必須可以自動(不可手動按200次)分辨這新的200張圖，程式最後輸出為一個.txt,.csv,或.xlsx，其存有200X1的向量，代表此200圖的分類。
+
+紙本Project:需有簡介、流程、結論、心得、參考來源、程式碼。
+
+
+-------------------------------------------------
+### Project
 ### 簡介：
 NIST全稱NIST Special Database 19，全數據集包含了80多萬張圖片MNIST則是NIST數據集的縮減版，因為NIST數據集儲存的方式集數據分類構成較難使用，而MNIST作為NIST的子，圖片量較少且僅含有數字，更易操作。MNIST 資料集資料包含圖片與標籤兩種形式的內容。其中training data（共 55000 筆）與 validation data（共 5000 筆）皆具有圖片及標籤，而 test data（共 10000 筆）則是只有圖片，沒有標籤。每一筆資料的照片是由 28 pixels x 28 pixels ，總共 784 個 pixels 所組成，圖片顯示的是 0 到 9 之中的一個阿拉伯數字；資料的標籤則表示該手寫數字圖片所呈現的數字為何，也就是 0 到 9 中一個數值。
 
