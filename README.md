@@ -3,7 +3,7 @@
 ### 題目：
 請自行用MINST資料集做training data來訓練分類器。
 
-Validation data共有200張本課程同學的手寫圖供測試，每張的尺寸為28X28像數，灰階，uint8格式。
+Validation data共有200張本課程同學的手寫圖供測試，每張的尺寸為28X28像素，灰階，uint8格式。
 
 A. 習慣讀取idx3-ubyte圖檔格式的同學請下載validation-images-idx3-ubyte.gz，其
 分類標籤請下載validation-labels-idx3-ubyte.gz
